@@ -1,0 +1,48 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+#head-container {
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+}
+
+#head-container * {
+    height: 2.5rem;
+    width: 100%;
+}
+
+#main-container {
+    display: flex;
+    height: 300px; /* Adjust as needed */
+}
+
+#main-container div {
+    flex: 1;
+    display: flex;               /* ✅ Make it a flex container */
+    flex-direction: column;      /* ✅ Stack vertically */
+    justify-content: flex-end;   /* ✅ Push children to bottom */
+    align-items: center;         /* (Optional) center horizontally */
+}
+
+#main-container div h2 {
+    background-color: white;
+    font-size: 0.75em;
+    color: black;
+    height: 3rem;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
